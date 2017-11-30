@@ -24,6 +24,12 @@ public class queue {
         this.nItem = 0; // amount of items in list
     }
     public void insert(long j){
+        //if rear is at the end, move the index indicator back to the front. Will overwrite the frontmost value and keep going left to right
+        //in a CIRCULAR queue. if you want a regular queue, you can just give an error and do nothing
+        if( rear == maxSize -1){
+            rear = -1;
+            
+        }
         rear++;
         nItem++;
         queArray[rear] = j;
