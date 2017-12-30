@@ -39,14 +39,14 @@ public class App {
         return aNode.data;
     }
     public static int lengthOfList(Node aNode){
-        int i = 1;
-        Node head;
-        while(aNode.next != null){
-            i++;
-            head = aNode.next;
-            aNode = head;
+        int length = 0;
+        Node currentNode = aNode;
+        while(currentNode != null){
+            length++;
+            currentNode = currentNode.next;
+            
         }
-        return i;
+        return length;
     }
     public static void insert(int index, Node nNode, Node oNode){
         int i = 0;
