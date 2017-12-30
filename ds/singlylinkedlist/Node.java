@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ds.linkedlist;
+package ds.singlylinkedlist;
 
 /**
  *
  * @author daryl
  */
-
 public class Node {
     public int data;
-    //we want the next to point to a Node, hence the Node type vs int or String
-    public Node next = null;
+    public Node next;
     
-    
+    public void displayNode(){
+        System.out.println("{ "+data+" }");
+    }
 }
